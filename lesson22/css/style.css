@@ -1,0 +1,7 @@
+p {
+    padding: 25px 25px 0px;
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+    background-color: aquamarine;
+}
