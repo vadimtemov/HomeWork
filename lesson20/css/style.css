@@ -1,5 +1,4 @@
-p {
-    font-family: 'Charis SIL', serif;
-    font-size: 32px;
-    font-style: italic;
+h1 {
+    font-size: 3rem;
+    line-height: 200%;
 }
