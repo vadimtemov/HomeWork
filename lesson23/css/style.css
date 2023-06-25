@@ -1,0 +1,28 @@
+      /* Вариант 1 */
+
+.box {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    background: linear-gradient(rgb(15, 61, 212), rgb(149, 23, 212));
+}
+
+.block {
+    height: 100vh;
+    background-image: url(/sun.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+      /* Вариант 2 */
+
+/* .box {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.block {
+    height: 100vh;
+    background: url(/sun.jpg) 50% no-repeat, linear-gradient(rgb(50, 149, 206), rgb(206, 124, 37));   
+} */
