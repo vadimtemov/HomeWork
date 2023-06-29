@@ -1,0 +1,28 @@
+.box {
+    padding: 50px;
+}
+
+.block {
+    width: 1000px;
+}
+
+p {
+    animation-name: colorful-tex;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    font-size: 36px;
+    font-weight: bold;
+    
+}
+
+@keyframes colorful-tex{
+    from {
+        color: red;
+        
+    }
+    to {
+        color: black;
+        
+    }
+}
