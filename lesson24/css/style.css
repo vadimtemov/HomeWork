@@ -10,11 +10,12 @@
 
 .block {
     position: fixed;
-    width: 50%;
     min-height: 100px;
+    left: 50vw;
+    right: 50px;
+    bottom: 100px;
+    
     background-color: rgb(59, 120, 218);
     border-radius: 5px;
     border: 5px solid rgb(52, 106, 66);
-    right: 50px;
-    bottom: 100px;
 }
