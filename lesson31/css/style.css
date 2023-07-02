@@ -1,0 +1,34 @@
+.container {
+    height: 100%;
+    padding: 200px;
+    background-color: bisque;
+}
+
+.title {
+    font-size: 36px;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.title::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+}
