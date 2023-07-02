@@ -10,7 +10,7 @@
 
 .block {
     position: fixed;
-    min-height: 100px;
+    height: 100px;
     left: 50vw;
     right: 50px;
     bottom: 100px;
