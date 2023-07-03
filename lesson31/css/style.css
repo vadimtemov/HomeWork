@@ -9,26 +9,22 @@
     position: relative;
 }
 
-.title::before {
+.title::before, .title::after {
     content: "";
     display: inline-block;
     position: absolute;
-    top: 50%;
-    left: -15px;
     width: 10px;
     height: 10px;
     border-radius: 10px;
+    top: 50%;
+}
+
+.title::before {
+    right: 505px;
     background-color: blue;
 }
 
 .title::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 50%;
     left: 220px;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
     background-color: red;
 }
