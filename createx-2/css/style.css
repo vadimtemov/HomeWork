@@ -6,7 +6,7 @@ html, body {
 .wrapper {
     min-height: 100%;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .container {
@@ -169,20 +169,22 @@ html, body {
 
 
 .header__body {
-    /* flex-grow: 1; */
+    
 }
 
 .header__body-inner {
     display: grid;
-    
+    grid-template-rows: auto auto;
+    align-content: space-around;
+    height: 100vh;
 }
 
 .header__main {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
     justify-items: center;
     align-items: center;
+    justify-content: space-between;
     
     color: #1E212C;
 }
