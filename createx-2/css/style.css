@@ -29,6 +29,10 @@ html, body {
     transition: .3s;
 }
 
+.button:hover {
+    transform: scale(1.05);
+}
+
 .button--empty {
     background-image: none;
     border-left: 2px solid #FF3F3A;
@@ -39,8 +43,6 @@ html, body {
     background-position: 0 100%, 0 0;
     background-repeat: no-repeat;
     background-clip: border-box;
-
-    transition: 1.5s;
 }
 
 .button--empty span {
@@ -63,16 +65,12 @@ html, body {
     line-height: 150%;
     letter-spacing: 1px;
     text-transform: uppercase;
-
-    transition: 1s;
 }
 
 .heading__title {
     font-size: 46px;
     font-weight: 900;
     line-height: 130%;
-
-    transition: 1.5s;
 }
 /* =================================================================================================== */
 
@@ -285,14 +283,6 @@ html, body {
     margin-bottom: 48px;
 }
 
-.heading__subtitle:hover {
-    transform: scale(1.2);
-}
-
-.heading__title:hover {
-    transform: skew(30deg, 20deg);
-}
-
 .about__text {
     margin-bottom: 60px;
 }
@@ -301,10 +291,6 @@ html, body {
     margin-bottom: 24px;
     font-weight: 400;
     line-height: 160%;
-}
-
-.about__paragraph:hover {
-    color: red
 }
 
 .about__texabout__paragraph:last-child {
@@ -326,22 +312,8 @@ html, body {
     margin-right: 24px;
 }
 
-.about__btn:hover {
-    color: black;
-    box-shadow: 7px 7px 7px 7px rgb(66, 69, 81);
-}
-
-.button--empty:hover {
-    transform: scale(0.5) translate(-10%, -10%);
-    box-shadow: none;
-}
-
 .about__btn:last-child {
     margin-right: 0;
-}
-
-.img__effects:hover {
-    transform: rotate(0.5turn);
 }
 
 .about__values {
@@ -349,23 +321,15 @@ html, body {
     justify-content: space-between;
 }
 
+.about__image-box {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
 .about__image-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.about__image-box {
-    overflow: hidden;
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-}
-
-.about__image-box:hover {
-    border-radius: 50%;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    border: 3px solid #F75E05;
 }
 
 .about__numbers {
@@ -377,17 +341,10 @@ html, body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
-    transition: 1s;
 }
 
 .about__number:last-child {
     margin-bottom: 0;
-}
-
-.about__number:hover {
-    color: aqua;
-    transform: scale(1.2);
 }
 
 .about__number span {
@@ -399,7 +356,205 @@ html, body {
     margin-right: 16px;
 }
 
-.about__number span:hover {
-    color: #F75E05;
-    text-shadow: 3px 3px rgb(210, 168, 50);
+/* ========================================================== */
+
+.directions {
+    padding-bottom: 180px;
+}
+
+.directions__inner {
+    position: relative;
+}
+
+.directions__inner::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 30px;
+    left: -190px;
+    background: url("/images/decor/group.svg") 0 0 no-repeat;
+    width: 136px;
+    height: 115px;
+}
+.directions__inner::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 250px;
+    right: -400px;
+    background: url("/images/decor/circles.svg") 0 0 no-repeat;
+    width: 243px;
+    height: 243px;
+}
+
+.directions__heading {
+    margin-bottom: 90px;
+}
+
+.heading--text-center {
+    text-align: center;
+}
+
+.directions__filter-box {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.directions__filter-item {
+    margin-right: 45px;
+}
+
+.directions__filter-item:last-child {
+    margin-right: 0x;
+}
+
+.directions__filter-bth {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #9A9CA5;
+    gap: 10px;
+    padding: 1px 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    color: #9A9CA5;
+}
+
+.directions__filter-bth--active {
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.directions__list {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, 1fr);
+    gap: 30px;
+}
+
+.directions__list-item--marketing .direction__link-tag{
+background-color: #03CEA4;
+}
+
+.directions__list-item--management .direction__link-tag{
+background-color: #5A87FC;
+}
+
+.directions__list-item--hr .direction__link-tag{
+background-color: #F89828;
+}
+
+.directions__list-item--design .direction__link-tag{
+background-color: #F52F6E;
+}
+
+.directions__list-item--development .direction__link-tag{
+background-color: #7772F1;
+}
+
+.directions__list-item {
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.directions__list-item:hover {
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    transition: .3s;
+}
+
+.directions__list-item:hover .direction__link-btn{
+    color: #FF3F3A;
+    transition: .3s;
+}
+
+.direction__img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.direction__link-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E5E8ED;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.direction__link-tag {
+    color: #fff;
+    font-weight: 700;
+    line-height: 160%;
+    background: #03CEA4;
+    border-radius: 4px;
+    padding: 1px 8px;
+    gap: 10px;
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.direction__link-text {
+    color:  #787A80;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 20px;
+}
+
+.direction__link-btn {
+    color: #1E212C;
+    font-weight: 700;
+    line-height: 160%;
+    display: flex;
+    transition: 1s;
+}
+
+.direction__link-btn::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("/images/arrow/right-red.svg") 0 2px / 100% no-repeat;
+    margin-left: 8px;
+}
+
+.directions__list-item--empty {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    background: #F4F5F6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.directions__list-item--empty span{
+    max-width: 242px;
+}
+
+
+/* ---------Пример ДЗ------------ */
+
+
+.direction__img-box--animation {
+    -webkit-transform: rotate(25deg); 
+    transform: rotate(25deg); 
+}
+
+.direction__link-tag--size {
+    font-size: 36px;
+}
+
+.direction__link-text--color {
+    color: #F52F6E;
+}
+
+.direction__link-btn--border {
+    border: 2px solid red;
 }
