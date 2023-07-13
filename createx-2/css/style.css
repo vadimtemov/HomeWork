@@ -16,6 +16,18 @@ html, body {
     height: 100%;
 }
 
+.main__about {
+    padding: 160px 0 180px;
+}
+
+.main__directions {
+    padding-bottom: 180px;
+}
+
+.main__cert {
+    margin-bottom: -46px;
+}
+
 .button {
     display: inline-block;
     font-weight: 700;
@@ -51,10 +63,6 @@ html, body {
     -webkit-text-fill-color: transparent;
 }
 
-.logo {
-
-}
-
 .heading {
     color: #1E212C;
 }
@@ -80,10 +88,6 @@ html, body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.header__top {
-
 }
 
 .header__top-inner {
@@ -248,9 +252,6 @@ html, body {
 
 /* =========================================================================================== */
 
-.about {
-    padding: 180px 0 160px;
-}
 
 .about__inner {
     
@@ -358,9 +359,6 @@ html, body {
 
 /* ========================================================== */
 
-.directions {
-    padding-bottom: 180px;
-}
 
 .directions__inner {
     position: relative;
@@ -425,7 +423,6 @@ html, body {
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border: none;
     color: #fff;
-    padding: 10px 15px;
 }
 
 .directions__list {
@@ -538,23 +535,55 @@ background-color: #7772F1;
     max-width: 242px;
 }
 
+/* ===================certificate====================== */
 
-/* ---------Пример ДЗ------------ */
-
-
-.direction__img-box--animation {
-    -webkit-transform: rotate(25deg); 
-    transform: rotate(25deg); 
+.cert__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-.direction__link-tag--size {
-    font-size: 36px;
+.cert__inner::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -190px;
+    width: 60px;
+    height: 60px;
+    background: url("/images/decor/shapes2.svg");
 }
 
-.direction__link-text--color {
-    color: #F52F6E;
+.cert__content {
+    max-width: 400px;
+    margin-right: 30px;
 }
 
-.direction__link-btn--border {
-    border: 2px solid red;
+.cert__heading {
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 1px 15px #F75E05;
+    border-radius: 10%;
+}
+
+.cert__text {
+    line-height: 160%;
+    margin-bottom: 32px;
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+}
+
+.cerf__logos {
+    display: flex;
+    box-shadow: 0px 5px 18px 4px #FF3F3A inset;
+}
+
+.cerf__logos--item {
+    margin-right: 40px;
+}
+
+.cerf__logos--item:last-child {
+    margin-right: 0;
+}
+
+.cert__img {
+    box-shadow: 10px 5px 10px 12px #05589833;
 }
