@@ -954,20 +954,8 @@ background-color: #7772F1;
 
 .companies__flex {
     display: flex;
-    margin-bottom: 60px;
-}
-
-.companies__flex:last-child {
-    margin-bottom: 0;
-}
-
-.companies__flex-item {
-    margin-right: 100px;
-    
-}
-
-.companies__flex-item:last-child {
-    margin-right: 0px;
+    flex-wrap: wrap;
+    gap: 40px 102px;
 }
 
 .companies__flex-link {
