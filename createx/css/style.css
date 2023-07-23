@@ -52,6 +52,10 @@ html, body {
     padding-bottom: 180px;
 }
 
+.main__questions {
+    padding-bottom: 180px;
+}
+
 .button {
     display: inline-block;
     font-weight: 700;
@@ -1343,4 +1347,303 @@ background-color: #7772F1;
     height: 412px;
     max-width: 705px;
     width: 100%;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* ==============================INFO===================================== */
+/* ==============================INFO===================================== */
+
+.questions__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions__contant {
+    margin-left: 30px;
+}
+
+.questions__heading {
+    margin-bottom: 40px;
+}
+
+.questions__form-row {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.questions__form-input,
+.questions__form-text {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    padding: 13px 16px;
+    margin-top: 8px;
+}
+
+.questions__form-input::placeholder,
+.questions__form-text::placeholder {
+    color: #9A9CA5;
+}
+
+.questions__form-label {
+    margin-right: 25px;
+    flex: 1 1 auto;
+}
+
+.questions__form-label:last-child {
+    margin-right: 0;
+}
+
+.questions__label-text {
+    display: block;
+    margin-bottom: 48px;
+}
+
+.questions__form-text {
+    resize: none;
+    height: 128px;
+}
+
+.questions__label-checkbox {
+    display: flex;
+    width: 100%;
+    margin-right: 50px;
+    line-height: 160%;
+}
+
+.questions__form-checkbox {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    flex: 0  0 auto;
+    margin-top: 5px;
+    margin: 5px 12px 0px 0px ;
+}
+
+.questions__form-default {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.questions__form-default:checked + .questions__form-custom {
+    background:url(../images/icon/check.svg) 50% 50% no-repeat, #FF3F3A;
+    border: 1px solid #FF3F3A;
+}
+
+.questions__form-custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #424551;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.questions__form-btn {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ==============================FOOTER===================================== */
+/* ==============================FOOTER===================================== */
+
+.footer {
+    color: #fff;
+}
+
+.footer__top {
+    background-color: #1E212C;
+    padding: 80px 0px 60px 0px;
+}
+
+.footer__top-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.footer__top-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.footer__top-col:first-child {
+    max-width: 310px;
+}
+
+.footer__top-col:last-child {
+    max-width: 315px;
+}
+
+.footer__top-logo {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.footer__top-text {
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.6;
+    margin-bottom: 38px;
+}
+
+.footer__socials {
+    display: flex;
+}
+
+.footer__socials-item {
+    margin-right: 20px;
+}
+
+.footer__socials-item:last-child {
+    margin-right: 0;
+}
+
+.footer__socials-link path {
+    transition: all .3s;
+}
+
+.footer__socials-link:hover path {
+    fill: #fff;
+}
+
+.footer__top-title {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.footer__top-col:last-child .footer__top-title {
+    white-space: wrap;
+}
+
+.footer__top-item {
+    margin-bottom: 8px;
+}
+
+.footer__top-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__item-link {
+    opacity: 0.6;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.footer__item-link svg {
+    margin-right: 8px;
+}
+
+.footer__item-link:hover {
+    opacity: 1;
+}
+
+.footer__form {
+    
+}
+
+.footer__form-items {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.12);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.footer__form-input {
+    width: 100%;
+    padding: 9px 12px;
+    line-height: 150%;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    background-color: transparent;
+}
+
+.footer__form-input::placeholder {
+    color: #fff;
+    opacity: .6;
+}
+
+.footer__form-btn {
+    background: transparent;
+    padding: 12px 10px 12px 0px;
+}
+
+.footer__form-btn::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/arrow/arrow-rigth-mini.svg");
+    transition: all .3s;
+}
+
+.footer__form-btn:hover::before {
+    transform: scale(1.2);
+}
+
+.footer__top-desc {
+    font-size: 10px;
+    line-height: 150%;
+}
+
+
+
+
+.footer__bottom {
+    background-color: #292C37;
+}
+
+.footer__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer__copy {
+    font-size: 12px;
+    line-height: 150%; 
+}
+
+.footer__copy span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icon/heart-icon.svg") 0 0 / 100% 100% no-repeat;
+    vertical-align: sub;
+}
+
+.footer__go-top {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    opacity: .6;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.footer__go-top:hover {
+    opacity: 1;
 }

@@ -44,12 +44,6 @@ $('.testimonials__next').on('click', function (e) {
     $('.testimonials__slider').slick('slickNext')
 })
 
-// $('.program__acc-link').on('click', function(e) {
-//     e.preventDefault()
-//     $(this).toggleClass('program__acc-link--active')
-//     $(this).children('.program__acc-text').slideToggle()
-// })
-
 $('.program__acc-link').on('click', function (e) {
     e.preventDefault()
     if ($(this).hasClass('program__acc-link--active')) {
@@ -62,5 +56,13 @@ $('.program__acc-link').on('click', function (e) {
         $(this).children('.program__acc-text').slideDown()
     }
 })
+
+$(".header__nav-list a, .header__top-btn, .footer__go-top").on("click", function (e) {
+    e.preventDefault()
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000)
+})
+
 
 })
