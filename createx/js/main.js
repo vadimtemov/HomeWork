@@ -64,5 +64,17 @@ $(".header__nav-list a, .header__top-btn, .footer__go-top").on("click", function
     $('body,html').animate({scrollTop: top}, 1000)
 })
 
+setInterval(() => {
+    if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
+        $('.burger').addClass('burger--follow')
+    } else {
+        $('.burger').removeClass('burger--follow')
+    }
+}, 0);
+$('.burger, .overlay').on('click', function (e) {
+    e.preventDefault()
+    $('.header__top').toggleClass('header__top--open')
+    $('.overlay').toggleClass('overlay--show')
+})
 
 })
