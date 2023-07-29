@@ -17,6 +17,29 @@ $('.team__slider').slick({
     slidesToShow: 4,
     infinite: true,
     draggable: false,
+    responsive: 
+        [
+        {
+        breakpoint: 1100,
+        settings: {
+            slidesToShow: 3,         
+            },
+        },
+        {
+        breakpoint: 750,
+        settings: {
+            slidesToShow: 2,         
+            },
+        },
+        {
+        breakpoint: 550,
+        settings: {
+            slidesToShow: 1,
+            draggable: true,
+            dots: true,         
+            },
+        },
+        ]
 })
 
 $('.team__slider-prew').on('click', function (e) {
