@@ -32,14 +32,19 @@
 // const arr = [3, 8, 45, 9, 67, 87]
 
 // function number(a) {
+//     let newArr = []
 //     for(let i = 0; i < a.length; i++) {
 //         if (a[i] > 10) {
-//             return a[i]
+//             newArr.push(a[i])
 //         }
 //     }
+//     return newArr
 // }
 
-// console.log(number(arr))
+// res = number(arr)
+
+// console.log(res)
+
 
 // ---------------------------------------------------
 
@@ -60,3 +65,61 @@
 
 // const result = calk(4, 3, 'sum')
 // console.log(result)
+
+// ======================= Урок 83 ================================
+
+// const data = {
+//     name: 'Vadim',
+//     age: 32,
+//     education: 'engineer'
+// }
+
+// console.log(data.education)
+
+// ---------------------------------------------------------------
+
+// const data = {
+//     name: 'Vadim',
+//     age: 32,
+//     education: 'engineer',
+//     greetings(name) {
+//         console.log(`Hello ${name}`)
+//     }
+// }
+
+// data.greetings('Ivan')
+
+// ----------------------------------------------------------------
+
+// const arr = [
+//     {
+//         name: 'Vadim',
+//         age: 32,
+//         isAdmin: false
+//     },
+//     {
+//         name: 'Ivan',
+//         age: 25,
+//         isAdmin: true
+//     },
+//     {
+//         name: 'Alex',
+//         age: 28,
+//         isAdmin: false
+//     }
+// ]
+
+// let a = 0
+
+// for (i = 0; i < arr.length; i++) {
+//     if (arr[i].isAdmin == false) {
+//         a = a + 1    
+//     }        
+// }
+
+// console.log(a)
+
+// --------------------------------------------------------------
+
+
+
