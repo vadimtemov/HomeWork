@@ -1,0 +1,57 @@
+.btn-open {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 20px 40px;
+    background-color: aquamarine;
+    border: 2px solid rgb(4, 255, 0);
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.body {
+    min-height: 200vh;
+    
+}
+
+.body--fixet {
+    overflow-y: hidden;
+}
+
+.modal {
+    position: fixed;
+    inset: 0em;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #545252c1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.modal--open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__window {
+    position: relative;
+    max-width: 400px;
+    height: 300px;
+    padding: 80px 20px;
+    background-color: rgb(142, 194, 242);
+    border-radius: 20px;
+    font-size: 20px;
+    transform: .5s;
+}
+
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    font-size: 20px;
+    color: red;
+}
