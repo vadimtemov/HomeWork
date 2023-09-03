@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    color: #121214;
+    line-height: 130%;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 70px;
+    height: 100%;
+}
+
+/* ================= Nav ========================= */
+.header {
+    content: "";
+    background: url("../images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
+}
+
+.header_top {
+    margin-bottom: 108px;
+}
+.container {
+}
+
+.header_top-inner {
+    display: flex;
+    padding-top: 12px;
+}
+
+.header_logo {
+    margin-right: auto;
+}
+
+.nav {
+    margin-top: 27px;
+    margin-right: 58px;
+}
+
+.nav_list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav_item {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 104.7%; 
+    text-transform: uppercase;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 24px;
+}
+
+.number {
+    margin-left: 12px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 104.7%;
+    letter-spacing: 0.4px;
+}
+
+.connect_btn {
+    width: 177px;
+    height: 40px;
+    margin-top: 11px;
+    background: rgba(255, 255, 255, 0.40);
+    border-radius: 9px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 104.7%;
+    letter-spacing: 0.28px;
+}
+
+
+.header_lower-inner {
+    max-width: 644px;
+}
+
+h1 {
+    margin-bottom: 37px;
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 125.5%;
+    letter-spacing: 3.15px;
+}
+
+.header_lower-text {
+    margin-bottom: 82px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 108.7%;
+}
+
+.header_lower-bth {
+    position: relative;
+    margin-bottom: 192px;
+    padding: 19px 75px 19px 23px;
+    border-radius: 9px;
+    background: #037E8C;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 108.7%;
+}
+
+.header_lower-bth::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background: url("../images/icons/arrow.svg") 0 0 / 100%;
+    top: 11px;
+    right: 12px;
+    
+}
