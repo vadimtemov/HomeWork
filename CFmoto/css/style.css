@@ -62,6 +62,10 @@ body {
     text-transform: uppercase;
 }
 
+.nav_item:hover {
+    color:  #037E8C;;
+} 
+
 .connect {
     display: flex;
     flex-direction: column;
@@ -78,6 +82,10 @@ body {
     letter-spacing: 0.4px;
 }
 
+.number:hover {
+    color: #037E8C;
+}
+
 .connect_btn {
     width: 177px;
     height: 40px;
@@ -91,6 +99,9 @@ body {
     letter-spacing: 0.28px;
 }
 
+.connect_btn:hover {
+    background: #037E8C;
+}
 
 .header_lower-inner {
     max-width: 644px;
