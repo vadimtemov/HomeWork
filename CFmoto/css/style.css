@@ -23,12 +23,26 @@ body {
     height: 100%;
 }
 
-/* ================= Nav ========================= */
+/* ============================================================== */
 .header {
-    content: "";
+    content: ""; 
     background: url("../images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
+    animation: changing 10s infinite;
+    height: 100vh;
 }
 
+@keyframes changing {
+    0% {
+        background: url("../images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
+    }
+    50% {
+        background: url("../images/background/bg-nav2.jpg") 0 0 / 100% no-repeat;
+    }
+
+}
+
+
+/* ===================== header_top ============================= */
 .header_top {
     margin-bottom: 108px;
 }
@@ -103,6 +117,8 @@ body {
     background: #037E8C;
 }
 
+/* ================= header_lower ================== */
+
 .header_lower-inner {
     max-width: 644px;
 }
@@ -145,3 +161,4 @@ h1 {
     right: 12px;
     
 }
+/* =============================================== */
