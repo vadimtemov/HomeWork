@@ -1,7 +1,11 @@
-body {
+.body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     color: #121214;
     line-height: 130%;
+}
+
+.body_application-open {
+    overflow: hidden;
 }
 
 .wrapper {
@@ -23,7 +27,13 @@ body {
     height: 100%;
 }
 
+.button {
+    border-radius: 9px;
+}
+
 /* ============================================================== */
+/* ====================== header_background ===================== */
+
 .header {
     content: ""; 
     background: url("../images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
@@ -38,14 +48,14 @@ body {
     50% {
         background: url("../images/background/bg-nav2.jpg") 0 0 / 100% no-repeat;
     }
-
 }
 
-
 /* ===================== header_top ============================= */
+
 .header_top {
     margin-bottom: 108px;
 }
+
 .container {
 }
 
@@ -105,7 +115,6 @@ body {
     height: 40px;
     margin-top: 11px;
     background: rgba(255, 255, 255, 0.40);
-    border-radius: 9px;
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
@@ -113,11 +122,92 @@ body {
     letter-spacing: 0.28px;
 }
 
-.connect_btn:hover {
+.connect_btn:hover { 
     background: #037E8C;
 }
 
-/* ================= header_lower ================== */
+/* ======================== modal window ===================================== */
+
+.modal_application {
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 18, 20, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body_application-open .modal_application {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal_application_window {
+    position: relative;
+    padding: 82px 362px 101px;
+    border-radius: 9px;
+    background: #fff;
+}
+
+.modal_application_close {
+    position: absolute;
+    top: -72px;
+    right: -116px;
+    background: rgba(18, 18, 20, 0);
+    
+    width: 40px;
+    height: 40px;
+}
+
+.modal_application_close path:hover {
+    fill: #037E8C;
+}
+
+.modal_application_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.modal_application_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.application_text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 11px;
+    line-height: normal;
+}
+
+.application_input {
+    width: 350px;
+    height: 46px;
+    border-radius: 8px;
+    border: 0.5px solid #787878;
+    margin-bottom: 12px;
+}
+
+.modal_application_btn {
+    width: 175px;
+    height: 45px;
+    border-radius: 9px;
+    background: #037E8C;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-top: 20px;
+}
+
+
+
+/* ============================================================= */
+
+/* ======================== header_lower ======================= */
 
 .header_lower-inner {
     max-width: 644px;
@@ -144,8 +234,8 @@ h1 {
     position: relative;
     margin-bottom: 192px;
     padding: 19px 75px 19px 23px;
-    border-radius: 9px;
     background: #037E8C;
+    font-size: 16px;
     color: #FFF;
     font-weight: 600;
     line-height: 108.7%;
@@ -159,6 +249,6 @@ h1 {
     background: url("../images/icons/arrow.svg") 0 0 / 100%;
     top: 11px;
     right: 12px;
-    
 }
-/* =============================================== */
+
+/* ======================================================================= */
