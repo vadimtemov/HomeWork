@@ -14,7 +14,6 @@
 <body class="body">
     <div class="wrapper">
         <header class="header">
-
             <div class="header_top">
                 <div class="container">
                     <div class="header_top-inner">
@@ -31,7 +30,7 @@
                         <div class="connect">
                             <div class="connect_phone">
                                 <img src="images/icons/phone_white.svg" alt="">
-                                <a class="number" href="tel:+79283332645">+7 928 333 26 45</a>
+                                <a class="connect_number" href="tel:+79283332645">+7 928 333 26 45</a>
                             </div>
                             <div>
                                 <button class="connect_btn button">Перезвоните мне</button>
@@ -53,10 +52,12 @@
                     </div>
                 </div>
             </section>
-
         </header>
 
-        <main class="main"></main>
+        <main class="main">
+
+        </main>
+
         <footer class="footer"></footer>
     </div>
 
@@ -73,9 +74,15 @@
             <div class="modal_application_title">Оставить заявку</div>
             <form class="modal_application_form">
                 <p class="application_text">Как к Вам обращаться?</p>
-                <input class="application_input" type="text">
+                <div class="application_input">
+                    <img class="input-icon" src="images/icons/avatar.svg">
+                    <input class="input" type="text">
+                </div>
                 <p class="application_text">Телефон или WhatsApp</p>
-                <input class="application_input" type="number">
+                <div class="application_input">
+                    <img class="input-icon" src="images/icons/phone.svg">
+                    <input class="input" type="tel">
+                </div>
                 <button class="modal_application_btn">Отправить</button>
             </form>
         </div>
