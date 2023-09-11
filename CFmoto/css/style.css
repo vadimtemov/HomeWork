@@ -2,7 +2,6 @@
     font-family: 'Montserrat', 'Arial', sans-serif;
     color: #121214;
     line-height: 130%;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .container {
-    /* max-width: 1440px; */
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0px 70px;
     height: 100%;
@@ -40,15 +39,17 @@
     content: ""; 
     background: url("../images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
     animation: changing 10s infinite;
-    height: 100%;
+    background-size: cover;
 }
 
 @keyframes changing {
     0% {
         background: url("../images/background/bg-nav.jpg") 0 0 / 100% no-repeat;
+        background-size: cover;
     }
     50% {
         background: url("../images/background/bg-nav2.jpg") 0 0 / 100% no-repeat;
+        background-size: cover;
     }
 }
 
@@ -132,6 +133,38 @@
 .connect_btn:hover { 
     background: #037E8C;
     transition: all .4s;
+}
+
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.burger-icon span::before {
+    bottom: 12px;
+}
+
+.burger-icon span::after {
+    top: 12px;
 }
 
 /* ======================== modal window ===================================== */
@@ -288,7 +321,39 @@ h1 {
     }
 }
 
+@media (max-width: 1200px) {
+    .header_top-inner {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        margin-right: 0;
+    }
+
+    .nav_list {
+        gap: 35px;
+    }
+
+    .connect {
+        position: absolute;
+        top: 60px;
+        right: 70px;
+    }
+}
+
 @media (max-width: 900px) {
+    .nav {
+        display: none;
+    }
+
+    .connect {
+        display: none;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
     .modal_application_close {     
         top: 7px;
         right: 7px;
@@ -297,3 +362,46 @@ h1 {
         fill: #037E8C;
     }
 }
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 25px;
+    }    
+}
+
+@media (max-width: 480px) {
+    .header_logo {
+        width: 70px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .header_lower-text {
+        margin-bottom: 228px;
+    }
+
+    .header_lower-bth {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 33px;
+    }
+}
+
