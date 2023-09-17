@@ -3,6 +3,7 @@ const modal = document.querySelector('.body')
 const modalApp = document.querySelector('.modal_application')
 const btnClose = document.querySelector('.modal_application_close')
 const btnBurger = document.querySelector('.burger-icon')
+const overlay = document.querySelector('.overlay')
 
 const closeModalApp = () => {
   modal.classList.remove('body_application-open')
@@ -29,6 +30,19 @@ document.addEventListener('keydown', event => {
   }
 })
 
+
+
 btnBurger.addEventListener('click', () => {
-  modal.classList.add('body--open-menu')
+  if (!document.body.classList.contains('body--open-menu')) {
+    document.body.classList.add('body--open-menu'),
+    overlay.classList.add('overlay--show')
+  } else {
+    document.body.classList.remove('body--open-menu')
+    overlay.classList.remove('overlay--show')
+  }
+})
+
+overlay.addEventListener('click', () => {
+  overlay.classList.remove('overlay--show'),
+  document.body.classList.remove('body--open-menu')
 })
