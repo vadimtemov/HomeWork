@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.body--open-menu {
+    overflow: hidden;
+}
+
 .body_application-open {
     overflow: hidden;
 }
@@ -26,6 +30,23 @@
     margin: 0 auto;
     padding: 0px 70px;
     height: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background: #1212148f;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay--show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .button {
@@ -130,7 +151,7 @@
     width: 177px;
     height: 40px;
     margin-top: 11px;
-    background: rgba(255, 255, 255, 0.40);
+    background: #ffffff66;
     line-height: 104.7%;
     letter-spacing: 0.28px;
 }
@@ -147,7 +168,7 @@
     align-items: center;
     justify-content: center;
     z-index: 11;
-    padding-top: 50px;
+    margin-top: 30px;
 }
 
 .burger-icon span {
@@ -157,14 +178,17 @@
 .burger-icon span,
 .burger-icon span::before,
 .burger-icon span::after {
-    position: absolute;
-    content: "";
     display: block;
     width: 45px;
     height: 6px;
     background: #fff;
     border-radius: 50px;
-    
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    position: absolute;
+    content: "";
 }
 
 .burger-icon span::before {
@@ -175,6 +199,19 @@
     top: 12px;
 }
 
+.body--open-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--open-menu .burger-icon span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.body--open-menu .burger-icon span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
 /* ======================== modal window ===================================== */
 
 .modal_application {
@@ -192,6 +229,7 @@
     opacity: 1;
     visibility: visible;
     transition: all .4s;
+    z-index: 12;
 }
 
 .modal_application_window {
@@ -304,6 +342,53 @@ h1 {
     right: 12px;
 }
 
+/* ======================== main ========================= */
+/* ======================== services ===================== */
+
+.services_inner {
+    display: flex;
+    gap: 3vh;
+    padding-top: 47px;
+    padding-bottom: 47px;
+}
+
+.excursions {
+    width: 302px;
+    padding-right: 23px;
+}
+
+.excursions-title {
+    padding-top: 21px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 108.7%;
+    white-space: nowrap;
+}
+
+.excursions-text {
+    font-weight: 400;
+}
+
+/* ============================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ================================ MEDIA ================================ */
 /* ================================ MEDIA ================================ */
 
@@ -326,12 +411,16 @@ h1 {
 }
 
 @media (max-width: 1200px) {
+    .container {
+        padding: 0px 50px;
+        
+    }
     .header_top-inner {
         flex-wrap: wrap;
     }
 
     .nav_inner {
-        padding-right: 0;
+        padding-right: 18px;
     }
 
     .nav_list {
@@ -343,6 +432,14 @@ h1 {
         top: 60px;
         right: 70px;
     }
+
+    .services_inner {
+        gap: 7vh;
+    }
+
+    .excursions-title {
+        white-space: wrap;
+    }
 }
 
 @media (max-width: 900px) {
@@ -351,10 +448,10 @@ h1 {
         inset: 0;
         z-index: 10;
         padding: 115px 50px;
-        background: #787878;
+        background: #4c5759;
         flex-direction: column;
         align-items: flex-start;
-        transform: translateX(0%);
+        transform: translateX(100%);
         opacity: 0;
         visibility: hidden;
         transition: all .6s;
@@ -376,6 +473,11 @@ h1 {
         padding-top: 70px;
     }
 
+    .connect_btn {
+        width: 210px;
+        background: rgb(151, 163, 177);
+    }
+
     .body--open-menu .nav{
         transform: translateX(50%);
         opacity: 1;
@@ -386,7 +488,13 @@ h1 {
         display: flex;
     }
 
+    .services_inner {
+        gap: 3vh;
+    }
 
+    .excursions {
+        padding-right: 17px;
+    }
 
     .modal_application_close {     
         top: 7px;
@@ -398,10 +506,39 @@ h1 {
 }
 
 @media (max-width: 750px) {
+    .header_logo {
+        z-index: 11;
+    }
+
+    .body--open-menu .nav{
+        transform: translateX(0%);
+    }
+
+    .nav {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav_list {
+        align-items: center;
+    }
+    
+
     h1 {
         font-size: 50px;
     }
 
+    .excursions {
+        padding-right: 3px;
+    }
+
+    .excursions-title {
+        font-size: 16px;
+    }
+
+    .excursions-text {
+        display: none;
+    }
 
 
     .modal_application_window {
@@ -413,11 +550,27 @@ h1 {
     .container {
         padding: 0 25px;
     }    
+
+    .burger-icon {
+        margin-top: 15px;
+    }
+
+    .services_inner {
+        gap: 1vh;
+    }
+
+    .excursions-title {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
     .header_logo {
         width: 70px;
+    }
+
+    .burger-icon {
+        margin-top: 5px;
     }
 
     h1 {
@@ -434,6 +587,13 @@ h1 {
         margin-bottom: 100px;
     }
 
+    .excursions-image {
+        width: 50px;
+    }
+
+    .excursions-title {
+        font-size: 12px;
+    }
 
     .modal_application_window {
         width: 90vw;
@@ -453,6 +613,18 @@ h1 {
         font-size: 33px;
     }
 
+    .services_inner {
+        flex-wrap: wrap;
+        justify-content: space-around
+    }
+
+    .excursions {
+        width: 34%;
+    }
+
+    .excursions-title {
+        font-size: 14px;
+    }
 
     .modal_application_window {
         width: 98vw;
