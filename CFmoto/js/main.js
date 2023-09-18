@@ -1,9 +1,9 @@
+// modal
+
 const btn = document.querySelector('.connect_btn')
 const modal = document.querySelector('.body')
 const modalApp = document.querySelector('.modal_application')
 const btnClose = document.querySelector('.modal_application_close')
-const btnBurger = document.querySelector('.burger-icon')
-const overlay = document.querySelector('.overlay')
 
 const closeModalApp = () => {
   modal.classList.remove('body_application-open')
@@ -30,7 +30,10 @@ document.addEventListener('keydown', event => {
   }
 })
 
+// burger
 
+const btnBurger = document.querySelector('.burger-icon')
+const overlay = document.querySelector('.overlay')
 
 btnBurger.addEventListener('click', () => {
   if (!document.body.classList.contains('body--open-menu')) {
@@ -46,3 +49,23 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('overlay--show'),
   document.body.classList.remove('body--open-menu')
 })
+
+// slider-routes
+
+const swiper = new Swiper('.gallery__routes', {
+  slidesPerView: 2,
+  spaceBetween: 80,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
