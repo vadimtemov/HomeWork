@@ -179,8 +179,6 @@
 .gallery__routes-wrapper  {
     height: 91%;
     align-items: center;
-
-    min-width: 0;
 }   
 
 .gallery__routes-slide {
@@ -204,13 +202,13 @@
     object-fit: cover;
 }
 
-
 .swiper-pagination-bullet {
     background: #121214;;
     opacity: 1;
-    margin-right: 20px;
 }
 
 .swiper-pagination-bullet-active {
     background: #037E8C;
 }
+
+
