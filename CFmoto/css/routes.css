@@ -171,9 +171,11 @@
 }
 
 /* =============== gallery ====================== */
+/* =============== Первый вариант слайдов======== */
 
-.gallery__routes {
-    position: relative;
+.swiper-container {
+    width: 40%;
+    height: 400px;
 }
 
 .gallery__routes-wrapper  {
