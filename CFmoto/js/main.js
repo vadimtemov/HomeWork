@@ -52,28 +52,17 @@ overlay.addEventListener('click', () => {
 
 // slider-routes
 
-const swiper = new Swiper('.gallery__routes', {
-  // direction: 'horizontal',
-  // loop: true,
+new Swiper(".swiper-container", {
+  slidesPerView: 'auto',
+  spaceBetween: 22,
   speed: 700,
-  spaceBetween: 20,
-  slidesPerView: 2.2,
-  
-  grabCursor: true,
   
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
-
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // mousewheel: {
-  //   sensitivity: 1,
-  //   eventsTarget: '.swiper-wrapper'
-  // },
-
 });
