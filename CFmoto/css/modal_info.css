@@ -1,0 +1,49 @@
+.modal__info {
+    position: fixed;
+    inset: 0;
+    background: #121214cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body__info-open .modal__info{
+    opacity: 1;
+    visibility: visible;
+    z-index: 13;
+    transition: all .4s;
+}
+
+.modal__info-window {
+    position: relative;
+    background: url(../images/background/bg-spring.svg) 0 0 / 100% no-repeat;
+    background-color: #F4F4F4;
+    min-width: 303px;
+    border-radius: 9px;
+}
+
+.modal_info-close {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+
+.modal_info-close:hover { 
+    color: #037E8C;
+}
+
+.modal__info-text {
+    padding: 117px 57px 117px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165%;
+}
+
+.engine span,
+.power span{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 165%;
+}

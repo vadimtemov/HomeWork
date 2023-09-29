@@ -1,4 +1,7 @@
 @import url(routes.css);
+@import url(modal_application.css);
+@import url(modal_excursion.css);
+@import url(modal_info.css);
 
 
 /* ----------------------------------------------------------------------- */
@@ -14,6 +17,14 @@
 }
 
 .body_application-open {
+    overflow: hidden;
+}
+
+.body_excursion-open {
+    overflow: hidden;
+}
+
+.body__info-open {
     overflow: hidden;
 }
 
@@ -136,13 +147,15 @@
 }
 
 .connect_number {
-    margin-left: 12px;
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
     line-height: 104.7%;
     letter-spacing: 0.4px;
-    
+}
+
+.phone-icon {
+    margin-right: 14px;
 }
 
 .connect_number:hover {
@@ -216,93 +229,6 @@
     top: 0;
     transform: rotate(-45deg);
 }
-/* ======================== modal window ===================================== */
-
-.modal_application {
-    position: fixed;
-    inset: 0;
-    background: rgba(18, 18, 20, 0.80);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.body_application-open .modal_application {
-    opacity: 1;
-    visibility: visible;
-    transition: all .4s;
-    z-index: 12;
-}
-
-.modal_application_window {
-    position: relative;
-    padding: 82px 362px 101px;
-    border-radius: 9px;
-    background: #fff;
-}
-
-.modal_application_close {
-    position: absolute;
-    top: -72px;
-    right: -116px;
-    background: rgba(18, 18, 20, 0);
-}
-
-.modal_application_close path:hover {
-    fill: #037E8C;
-}
-
-.modal_application_title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.modal_application_form {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.application_text {
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 11px;
-    line-height: normal;
-}
-
-.application_input {
-    position: relative;
-}
-
-.input-icon {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 12px;
-    left: 11px;
-}
-
-.input {
-    width: 350px;
-    height: 46px;
-    border-radius: 8px;
-    border: 0.5px solid #787878;
-    margin-bottom: 12px;
-    padding-left: 35px;
-}
-
-.modal_application_btn {
-    width: 175px;
-    height: 45px;
-    border-radius: 9px;
-    background: #037E8C;
-    color: #fff;
-    margin-top: 20px;
-}
-
 
 /* ============================================================= */
 /* ======================== header_lower ======================= */
@@ -400,7 +326,7 @@ h1 {
 
 @media (max-width: 1350px) {
 
-
+    /* --------------------------- */
     .modal_application_window {
         padding: 0;
         width: 60vw;
@@ -419,7 +345,6 @@ h1 {
 @media (max-width: 1200px) {
     .container {
         padding: 0px 50px;
-        
     }
     .header_top-inner {
         flex-wrap: wrap;
@@ -445,6 +370,15 @@ h1 {
 
     .excursions-title {
         white-space: wrap;
+    }
+
+    /* ------------------------------- */
+    .route-description {
+        padding-right: 10px;
+    }
+
+    .route-description--extended {
+        padding-right: 37px;
     }
 }
 
@@ -502,6 +436,22 @@ h1 {
         padding-right: 17px;
     }
 
+    /* ------------------------------- */
+    .route-title::before {
+        content: none;
+    }
+
+    .route-description {
+        padding-left: 50px;
+    }
+
+    .route-description--extended {
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+
+
+    /* --------------------------------- */
     .modal_application_close {     
         top: 7px;
         right: 7px;
@@ -546,7 +496,33 @@ h1 {
         display: none;
     }
 
+    /* ---------------slide---------------*/
+    .route {
+        display: block;
+        padding-bottom: 80px;
+    }
 
+    .route__slider {
+        width: 100%;
+    }
+
+    .route-description,
+    .route-description--extended {
+        padding-bottom: 20px;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+    
+    /* .route__slide {
+        max-width: 200px;
+        max-height: 300px;
+    } */
+
+    /* ---------------slide---------------*/
+
+    
     .modal_application_window {
         width: 80vw;
     }
@@ -568,6 +544,22 @@ h1 {
     .excursions-title {
         font-size: 14px;
     }
+
+    /* ----- наши маршруты -------- */
+    .route-description,
+    .route-description--extended {
+        padding-left: 25px;
+    }
+    /* ------ slide ------ */
+    .title-routes--text {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .route {
+        padding-bottom: 60px;
+    }
+    /* -------- slide ------ */
 }
 
 @media (max-width: 480px) {
@@ -600,7 +592,19 @@ h1 {
     .excursions-title {
         font-size: 12px;
     }
+    /* -------------наши маршруты--------------- */
 
+    .route-btn_details {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .route-btn_book {
+        width: 90%;
+    }
+
+
+    /* -------------------------- */
     .modal_application_window {
         width: 90vw;
     }
@@ -636,6 +640,30 @@ h1 {
         font-size: 14px;
     }
 
+    /* ---------- наши маршруты ------------ */
+    .routes_inner {
+        padding: 0 0 118px 0;;
+    }
+
+    .title-routes--text {
+        padding-top: 30px;
+        padding-bottom: 32px;
+        font-size: 32px;
+    }
+
+    .route-description {
+        padding-left: 25px;
+    }
+
+    .route-title {
+        font-size: 30px;
+    }
+
+    .route-btn_details {
+        margin-top: 10px;
+    }
+
+    /* ------------------------ */
     .modal_application_window {
         width: 98vw;
     }

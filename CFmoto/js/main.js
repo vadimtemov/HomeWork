@@ -1,16 +1,16 @@
-// modal
+// MODAL_APPLICATION
 
+const body = document.querySelector('.body')
 const btn = document.querySelector('.connect_btn')
-const modal = document.querySelector('.body')
 const modalApp = document.querySelector('.modal_application')
-const btnClose = document.querySelector('.modal_application_close')
+const btnCloseApp = document.querySelector('.modal_application_close')
 
 const closeModalApp = () => {
-  modal.classList.remove('body_application-open')
+  body.classList.remove('body_application-open')
 }
 
 btn.addEventListener('click', () => {
-  modal.classList.add('body_application-open')
+  body.classList.add('body_application-open')
 })
 
 modalApp.addEventListener('click', event => {
@@ -20,7 +20,7 @@ modalApp.addEventListener('click', event => {
   }
 })
 
-btnClose.addEventListener('click', () => {
+btnCloseApp.addEventListener('click', () => {
   closeModalApp()
 })
 
@@ -30,7 +30,71 @@ document.addEventListener('keydown', event => {
   }
 })
 
-// burger
+// MODAL_EXCURSION
+
+const btnDetal = document.querySelector('.route-btn_details')
+const modalEx = document.querySelector('.modal_excursion')
+
+btnDetal.addEventListener('click', openModalEx)
+modalEx.addEventListener('click', closeModalEx)
+
+function openModalEx(e) {
+  e.preventDefault()
+  body.classList.add('body_excursion-open')
+}
+
+function closeModalEx(e) {
+  // e.preventDefault() - из-за нее не работает календарь
+
+  const target = e.target
+
+  if (target.closest('.modal_excursion-close') || target.classList.contains('modal_excursion')) {
+    document.body.classList.remove('body_excursion-open')
+  }
+}
+
+// Открытие модальных окон для кнопок
+const btnExtendetOpen = document.querySelector('.btn_open-extended')
+
+btnExtendetOpen.addEventListener('click', openModalEx)
+function openModalEx(e) {
+  e.preventDefault()
+  body.classList.add('body_excursion-open')
+}
+// Открытие модальных окон для кнопок
+const btnExperienceOpen = document.querySelector('.btn_open-experience')
+
+btnExperienceOpen.addEventListener('click', openModalEx)
+function openModalEx(e) {
+  e.preventDefault()
+  body.classList.add('body_excursion-open')
+}
+
+// MODAL_INFO
+
+const btnOption = document.querySelector('.icon-options')
+const modalInfo = document.querySelector('.modal__info')
+
+btnOption.addEventListener('click', openModalInfo)
+modalInfo.addEventListener('click', closeModalInfo)
+
+function openModalInfo(e) {
+  e.preventDefault()
+  body.classList.add('body__info-open')
+}
+
+function closeModalInfo(e) {
+  e.preventDefault()
+
+  const target = e.target
+
+  if (target.closest('.modal_info-close') || target.classList.contains('modal__info')) {
+    document.body.classList.remove('body__info-open')
+  }
+}
+
+
+// BURGER
 
 const btnBurger = document.querySelector('.burger-icon')
 const overlay = document.querySelector('.overlay')
@@ -50,19 +114,70 @@ overlay.addEventListener('click', () => {
   document.body.classList.remove('body--open-menu')
 })
 
-// slider-routes
 
-new Swiper(".swiper-container", {
-  slidesPerView: 'auto',
-  spaceBetween: 22,
-  speed: 700,
+// SLIDER
+
+// ============== slider-routes ===========
+
+// new Swiper(".swiper-container", {
+//   slidesPerView: 'auto',
+//   spaceBetween: 22,
+//   speed: 700,
   
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+
+//   observer: true,
+//   observeParents: true,
+//   observeSlideChildren: true,
+  
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+
+// =============== slider-routes 2=====================
+
+const swiper = new Swiper('.route__slider', {
+
+  spaceBetween: 22,
+  slidesPerView: 1.1,
+  speed: 700,
+  grabCursor: true,
+  width: 320,
+  // centeredSlides: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      800: {
+        slidesPerView: 1.1,
+        spaceBetween: 22,
+      },
+      600: {
+        slidesPerView: 1.4,
+        spaceBetween: 15,
+      },
+      480: {
+        slidesPerView: 1.5,
+        spaceBetween: 8,
+      },
+      400: {
+        slidesPerView: 0.9,
+        spaceBetween: 30,
+      },
+    }
+  });
+
+  // =========================================

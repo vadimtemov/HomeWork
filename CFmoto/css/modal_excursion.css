@@ -1,0 +1,281 @@
+.modal_excursion {
+    position: fixed;
+    inset: 0;
+    background: #121214cc;
+    overflow: scroll;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body_excursion-open .modal_excursion {
+    opacity: 1;
+    visibility: visible;
+    z-index: 12;
+    transition: all .4s;
+}
+
+.modal_excursion-window {
+    position: relative;
+    max-width: 1300px;
+    border-radius: 9px;
+    background: #FFF;
+    margin: 117px auto 63px;
+}
+
+.modal_excursion-window-inner {
+    padding: 47px 0 74px 112px;
+}
+
+.modal_excursion-close {
+    position: absolute;
+    top: -72px;
+    right: 0;
+    background: #1212140f;
+    color: #FFF;
+}
+
+.modal_excursion-close:hover {
+    color: #037E8C;
+}
+
+.route-excursion {
+    padding-bottom: 69px;
+}
+
+.route-description-modal {
+    padding-left: 0;
+}
+
+.route-title-rio {
+    padding-bottom: 31px;
+}
+
+.route-btn_scheme {
+    background: #FFF;
+}
+
+.route-btn_scheme:hover {
+    background: #037E8C;
+    color: #FFF;
+    transition: all .4s;
+}
+
+.route__slide-modal {
+    /* transform: scale(0.7, 0.75); */
+    width: 250px;
+    max-height: 261px;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: all .7s;
+}
+
+.swiper-slide-active.route__slide-modal {
+    /* transform: scale(0.9, 0.9); */
+    width: 360px;
+    max-height: 315px;
+    transition: all .7s;
+}
+
+.seeRoute {
+    max-width: 1078px;
+    padding-bottom: 30px;
+}
+
+.seeRoute-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 27px;
+}
+
+.seeRoute-text-top,
+.seeRoute-text-bottom {
+font-weight: 400;
+line-height: 160%; 
+}
+
+.seeRoute-text-top {
+    padding-bottom: 30px;
+}
+
+.priceBike-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 45px;
+}
+
+.priceBike-list {
+    display: grid;
+    grid: repeat(2, 295px)/ repeat(3, 303px);
+    gap: 28px 28px;
+}
+
+.priceBike-card {
+    border-radius: 9px;
+    background: #F4F4F4;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon-options {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #FFF;
+}
+
+.icon-options:hover {
+    color: #b1aeae;
+    transition: all .4s;
+}
+
+.priceBike-card-img {
+    height: 222px;
+}
+
+.priceBike-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.priceBike-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-model {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+
+.card-price {
+    color: #037E8C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+}
+
+.ruble-icon {
+    margin-left: 6px;
+}
+
+.online-booking {
+    background: url('../images/background/bg-mix.png') 40% 50% no-repeat;
+    background-color: #F4F4F4;
+    border-radius: 0 0 9px 9px;
+}
+
+.online-booking-inner {
+    padding: 55px 0  98px 116px;
+}
+
+.online-booking-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 32px;
+}
+
+.form-booking {
+    display: grid;
+    grid: repeat(2, 80px)/repeat(2, 350px);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    width: 29px;
+    opacity: 0;
+}
+
+.input-icon-arrow_down {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 10px;
+}
+
+.input-counter {
+    position: absolute;
+    width: 350px;
+    height: 46px;
+    border-radius: 8px;
+    border: 0.5px solid #787878;
+    margin-bottom: 12px;
+    padding-left: 35px;
+}
+
+.application_input-counter {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+    top: 8px;
+    left: 126px;
+}
+
+.application_input-counter input[type="number"] {
+	display: block;
+	height: 32px;
+    width: 78px;
+	line-height: 32px;
+    border-radius: 4px;
+	border: 0.5px solid #037E8C;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+
+.application_input-counter input[type="number"]::-webkit-outer-spin-button,
+.application_input-counter input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+.number-plus,
+.number-minus {
+	position: absolute;
+	top: 1px;
+	bottom: 1px;
+	width: 30px;
+	padding: 0;
+	display: block;
+	text-align: center;	
+    border-radius: 4px;
+	border: 0.5px solid #037E8C;
+    background: #FFF;    
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.number-plus {
+    left: -41px;
+}
+
+.number-minus {	
+	right: -19px;	
+}
+
+.modal_book-btn {
+    margin-top: 30px;
+}
+
+.modal_book-btn:hover {
+    color: #037E8C;
+    background: none;
+    border: 1.5px solid #037E8C;
+}
+
+

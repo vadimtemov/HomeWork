@@ -1,0 +1,85 @@
+.modal_application {
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 18, 20, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body_application-open .modal_application {
+    opacity: 1;
+    visibility: visible;
+    transition: all .4s;
+    z-index: 12;
+}
+
+.modal_application_window {
+    position: relative;
+    padding: 82px 362px 101px;
+    border-radius: 9px;
+    background: #fff;
+}
+
+.modal_application_close {
+    position: absolute;
+    top: -72px;
+    right: -116px;
+    background: rgba(18, 18, 20, 0);
+    color: #fff;
+}
+
+.modal_application_close:hover {
+    color: #037E8C;
+}
+
+.modal_application_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.modal_application_form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.application_text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 11px;
+    line-height: normal;
+}
+
+.application_input {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 11px;
+}
+
+.input {
+    width: 350px;
+    height: 46px;
+    border-radius: 8px;
+    border: 0.5px solid #787878;
+    margin-bottom: 12px;
+    padding-left: 35px;
+}
+
+.modal_application_btn {
+    width: 175px;
+    height: 45px;
+    border-radius: 9px;
+    background: #037E8C;
+    color: #fff;
+    margin-top: 20px;
+}
