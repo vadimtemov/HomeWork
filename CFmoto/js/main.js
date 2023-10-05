@@ -180,4 +180,63 @@ const swiper = new Swiper('.route__slider', {
     }
   });
 
-  // =========================================
+  // =============== Gallery_slider=====================
+
+  const photo = new Swiper('.photo__swiper', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 22,
+    centeredSlides: true,
+    initialSlide: 2,
+    speed: 700,
+    grabCursor: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.photo-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.photo-button-prev',
+      prevEl: '.photo-button-next',
+    },
+
+    breakpoints: {
+      900: {
+        slidesPerView: 4,
+      },
+      800: {
+        slidesPerView: 3,
+      },
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      300: {
+        slidesPerView: 1,
+      },
+    }
+  });
+
+  // ------------------ Accordion ----------------------
+
+  const accordionLists = document.querySelectorAll('.accordion-list');
+
+  accordionLists.forEach(el => {
+    el.addEventListener('click', (e) => {
+
+      const accordionControl = e.target.closest('.accordion-list__control');
+      if(!accordionControl) return
+      const accordionItem = accordionControl.parentElement;
+      const accordionContent = accordionControl.nextElementSibling;
+
+      accordionItem.classList.toggle('accordion-list__item--opened');
+
+      if (accordionItem.classList.contains('accordion-list__item--opened')) {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      } else {
+        accordionContent.style.maxHeight = null;
+      }
+    });
+  });
