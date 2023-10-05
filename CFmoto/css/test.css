@@ -1,0 +1,35 @@
+.test__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 352px;
+    background: #121214;
+    background-image: url("../images/background/bg-test.png");
+    color: #fff;
+    text-align: center;
+}
+
+.test__title {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.test-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    padding-bottom: 43px;
+}
+
+.test-button {
+    background: #037E8C;
+    padding: 14px 43px;
+}
+
+.test-button:hover {
+    background: #fff;
+    color: #037E8C;
+    border: 1.5px solid #037E8C;
+    transition: all .4s;
+}

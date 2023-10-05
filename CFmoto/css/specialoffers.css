@@ -1,0 +1,91 @@
+.specialoffers {
+    background: url("../images/background/bg-buggy.png") 65px -65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.specialoffers-title {
+    padding-top: 65px;
+    padding-bottom: 45px;
+}
+
+.specialoffers-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.specialoffers-card {
+    display: flex;
+    height: 311px;
+    max-width: 636px;
+    border-radius: 9px;
+    background: #F4F4F4;
+    margin-right: 20px;
+}
+
+.specialoffers-card:last-child {
+    margin-right: 0;
+}
+
+.specialoffers-img {
+    height: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.specialoffers-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.specialoffers-description {
+    background: url("../images/background/Vector2.svg") 22px 152px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    border-radius: 9px 0;
+}
+
+.specialoffers-sale {
+    width: 252px;
+    padding: 26px 0 20px;
+    color: #037E8C;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 139%;
+}
+
+.specialoffers-sale span{
+    color: #037E8C;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 139%;
+}
+
+.specialoffers-text {
+    width: 288px;
+    margin-right: 13px;
+    padding-bottom: 20px;
+    color: #373737;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.specialoffers-btn {
+    display: inline-block;
+    padding: 14px 44px;
+    border-radius: 9px;
+    border: 1.5px solid #037E8C;
+    color: #037E8C;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.specialoffers-btn:hover {
+    color: #fff;
+    background: #037E8C;
+}

@@ -1,0 +1,26 @@
+.addservices-wrapper {
+    display: grid;
+    grid: repeat(2, 310px) / repeat(4, 23%);
+    gap: 30px;
+    padding: 10px 0 109px;
+}
+
+.card-addservices {
+    border-radius: 9px;
+    background: #F4F4F4;
+    overflow: hidden;
+}
+
+.card-addservices img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-addservices {
+    color: #037E8C;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 10px 10px 0 24px;
+}

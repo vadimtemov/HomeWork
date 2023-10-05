@@ -159,6 +159,7 @@
 .route-btn_details:hover {
     color: #FFF;
     background: #037E8C;
+    transition: all 0.4s;
 }
 
 .route-btn_book {
@@ -171,7 +172,8 @@
 .route-btn_book:hover {
     color: #037E8C;
     background: none;
-    border: 1.5px solid #037E8C;;
+    border: 1.5px solid #037E8C;
+    transition: all 0.4s;
 }
 
 /* =============== gallery ====================== */
@@ -251,7 +253,7 @@
     transition: all .7s;
 }
 
-.swiper-slide-active {
+.swiper-slide-active.route__slide {
     /* transform: scale(0.9, 0.9); */
     width: 360px;
     max-height: 360px;

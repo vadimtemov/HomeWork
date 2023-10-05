@@ -2,6 +2,18 @@
 @import url(modal_application.css);
 @import url(modal_excursion.css);
 @import url(modal_info.css);
+@import url(test.css);
+@import url(photo.css);
+@import url(video.css);
+@import url(team.css);
+@import url(conditions.css);
+@import url(specialoffers.css);
+@import url(certificate.css);
+@import url(questions.css);
+@import url(addservices.css);
+@import url(contacts.css);
+@import url(footer.css);
+
 
 
 /* ----------------------------------------------------------------------- */
@@ -69,6 +81,14 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 130%;
+}
+
+h2 {
+    color: #121214;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
 }
 
 /* ============================================================== */
@@ -340,9 +360,41 @@ h1 {
     .modal_application_title {
         margin-left: -137px;
     }
+    /* --------- Team ---------------- */
+    .team {
+        background: url("../images/background/bg-bumperСanister.png") -80px 0px / 120% no-repeat;
+    }
+
+    /* ----------- Conditions ------------ */
+    .conditions {
+        background: #F4F4F4 url("../images/background/bg-mountains.png") 0px -250px no-repeat;
+        background-size: auto;
+    }
+
+    /* ------------ Specialoffers --------------*/
+    .specialoffers-card {
+        height: 280px;
+    }
+    
+    /* ---------- Certificate ------------ */
+    .certificate {
+        background: url("../images/background/bg-mountains.png") 0px -210px no-repeat;
+        background-size: cover;
+    }
+
+    /* ------------ Questions --------------- */
+    .questions__inner {
+        padding: 0 0 85px;
+    }
+
+    /* --------------- Contacts ------------------ */
+    .contacts__inner {
+        padding-left: 18px;
+    }
 }
 
 @media (max-width: 1200px) {
+
     .container {
         padding: 0px 50px;
     }
@@ -380,9 +432,87 @@ h1 {
     .route-description--extended {
         padding-right: 37px;
     }
+
+    /* ----------- Modal_excursion ----------- */
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 112px;
+    }
+
+    .priceBike-list {
+        display: grid;
+        grid: repeat(2, 50%)/ repeat(3, 30%);
+        gap: 20px 20px;
+    }
+
+    /* ------------ Specialoffers --------------*/
+    .specialoffers-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .specialoffers-card {
+        max-width: 750px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ---------- Certificate ------------ */
+    .certificate {
+        background: url("../images/background/bg-mountains.png") 0px -210px no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+
+    .certificate-subtitle {
+        width: 100%;
+    }
+
+    .certificate-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-certificate {
+        padding-bottom: 20px;
+    }
+
+    .card-certificate {
+        margin-top: 40px;
+    }
+
+    /* -------- Questions ----------- */
+    .questions-accordion {
+        padding-right: 38px;
+    }
+
+    /* ----------- Addservices ------------ */
+    .addservices-wrapper {
+        gap: 16px;
+    }
+
+    /* ------------- Contacts -------------- */
+    
+.contacts__inner {
+    padding-left: 5px;
+}
+    
+    .contacts-communication-text {
+        padding-left: 4px;
+    }
+
+    /* -------------- Footer --------------- */
+    .footer-logo {
+        padding-left: 0;
+    }
+
+    .footer-menu-list {
+        gap: 25px;
+    }
 }
 
 @media (max-width: 900px) {
+
     .nav {
         position: fixed;
         inset: 0;
@@ -450,7 +580,6 @@ h1 {
         padding-right: 10px;
     }
 
-
     /* --------------------------------- */
     .modal_application_close {     
         top: 7px;
@@ -459,9 +588,132 @@ h1 {
     .modal_application_close path {
         fill: #037E8C;
     }
+
+    /* -------------- Modal_excursion ----------------- */
+    .modal_excursion-close {
+        top: 0;
+        color: #037E8C;
+        background: none;
+    }
+
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 50px;
+    }
+
+    .priceBike-list {
+        gap: 10px 10px;
+    }
+
+    .priceBike-card-img {
+        max-height: 200px;
+    }
+
+    .online-booking-inner {
+        padding: 55px 0 98px 50px;
+    }
+
+    .input,
+    .input-counter {
+        width: 320px;
+    }
+
+    .input-icon-arrow_down {
+        right: 40px;
+    }
+
+    /* ------------ Test ------------ */
+
+    .test-text {
+        font-size: 17px;
+    }
+
+    /* ---------- Team --------------- */
+    .img-employee {
+        height: 200px;
+    }
+
+    .text-employee {
+        margin-left: 12px;
+    }
+
+    .position-employee {
+        font-size: 16px;
+    }
+
+    /* ------------ Conditions ----------- */
+    .conditions-wrapper {
+        display: grid;
+        grid: repeat(3, 35%) / repeat(2, 50%);
+        gap: 20px;
+        padding-bottom: 81px;
+    }
+
+    /* -------- Questions ----------- */
+    .questions-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .questions-accordion {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+    /* ----------- Addservices ------------ */
+
+    .addservices-wrapper {
+        grid: repeat(2, 300px) / repeat(4, 24%);
+        gap: 12px;
+        padding: 10px 0 50px;
+    }
+    
+    .text-addservices {
+        color: #037E8C;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 130%;
+        padding: 10px 10px 0 24px;
+    }
+
+    /* ------------- Contacts -------------- */
+    .contacts__inner {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    
+    .contacts-box {
+        padding-bottom: 30px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .contacts-map {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* ----------- Footer ------------- */
+    .footer-menu-box {
+        margin: auto;
+    }
+
+    .footer-logo {
+        padding-left: 20px;
+    }
+
+    .footer-menu-list {
+        grid: repeat(2, auto) / repeat(3, auto);
+        column-gap: 60px;
+    }
+
 }
 
 @media (max-width: 750px) {
+    .container {
+        padding: 0px 40px;
+    }
     .header_logo {
         z-index: 11;
     }
@@ -496,7 +748,7 @@ h1 {
         display: none;
     }
 
-    /* ---------------slide---------------*/
+    /* ---------------Slide_excursion---------------*/
     .route {
         display: block;
         padding-bottom: 80px;
@@ -514,18 +766,126 @@ h1 {
     .swiper-pagination {
         display: none;
     }
-    
-    /* .route__slide {
-        max-width: 200px;
-        max-height: 300px;
-    } */
 
-    /* ---------------slide---------------*/
+    /* --------------- Modal_excursion ---------------*/
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 30px;
+    }
 
-    
+    .card-model {
+        font-size: 12px;
+    }
+
+    .card-price {
+        font-size: 16px;
+    }
+
+    .priceBike-list {
+        grid: repeat(2, 50%)/ repeat(3, 32%);
+        gap: 10px 10px;
+    }
+
+    .online-booking-inner {
+        padding: 55px 0 98px 30px;
+    }
+
+    .online-booking-title {
+        width: 325px;
+        margin: 0 auto;
+    }
+
+    .form-booking {
+        grid: repeat(4, 80px)/repeat(1, 320px);
+        justify-content: center; 
+    }
+
+    .input-icon-arrow_down {
+        right: 10px;
+    }
+
+    /* -------------- Test ---------------- */
+
+    .test__title {
+        font-size: 28px;
+    }
+
+    .test-text {
+        font-size: 14px;
+    }
+
+    /* ------------- modal в меню, оствить заявку ----------------- */
     .modal_application_window {
         width: 80vw;
     }
+
+    .modal_application_btn {
+        width: 100%;
+    }
+
+     /* ---------- Video --------------- */
+    
+    .video__inner {
+        height: 594px;
+        padding: 0 30px;
+    }
+
+    /* --------- Team ------------------ */
+    .team-cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card-employee {
+        max-width: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ------- Conditions -------------- */
+    .conditions-text {
+        padding: 9px 10px 10px 60px;
+    }
+
+    /* --------- Specialoffers --------- */
+    .specialoffers-wrapper {
+        padding-bottom: 50px;
+    }
+
+    .specialoffers-card {
+        height: 250px;
+    }
+
+    /* ---------- Certificate ------------ */
+    .card-certificate {
+        display: none;
+    }
+    .card-certificate-two {
+        display: block;
+    }
+
+    /* ----------- Addservices ------------ */
+    .addservices-wrapper {
+        grid: repeat(2, 280px) / repeat(4, 24%);
+        gap: 10px;
+        padding: 0 0 50px;
+    }
+
+    .card-addservices img {
+        height: 205px;
+    }
+    .text-addservices {
+        font-size: 12px;
+        padding: 10px 10px 0 5px;
+    }
+
+    /* ---------- Cobtacts ------------- */
+    .contacts-communication {
+        display: grid;
+        grid: repeat(2, 45%) / repeat(2, 57%);
+        row-gap: 30px;
+        column-gap: 15px;
+    } 
+    
 }
 
 @media (max-width: 600px) {
@@ -546,6 +906,10 @@ h1 {
     }
 
     /* ----- наши маршруты -------- */
+    .routes_inner {
+        padding: 25px 0 80px 0;
+    }
+
     .route-description,
     .route-description--extended {
         padding-left: 25px;
@@ -559,7 +923,110 @@ h1 {
     .route {
         padding-bottom: 60px;
     }
-    /* -------- slide ------ */
+    /* -------- Modal_excursion --------- */
+
+    .modal_excursion-window-inner {
+        padding: 47px 5px 74px 10px;
+    }
+
+    .priceBike-title {
+        font-size: 22px;
+    }
+
+    .priceBike-list {
+        grid: repeat(3, 33%)/ repeat(2, 48%);
+    }
+
+    .online-booking-inner {
+        padding: 55px 0 98px 0;
+    }
+
+      /* ---------- Video --------------- */
+    .video-container {
+        max-height: 300px;
+    }
+    .video__inner {
+        height: 480px;
+        padding: 0 20px;
+    }
+
+    /* ------------------ Team ----------------- */
+    .team-cards {
+        padding-bottom: 40px;
+    }
+    .card-employee {
+        max-width: 280px;
+    }
+
+    /* ------------ Conditions ----------- */
+    .conditions-title {
+        padding: 30px 0 30px;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .conditions-wrapper {
+        display: grid;
+        grid: repeat(6, 20%) / repeat(1, 100%);
+        gap: 20px;
+        padding-bottom: 285px;
+    }
+
+    /* ----------- Certificate ------------ */
+    .certificate-subtitle {
+        padding-bottom: 30px;
+    }
+
+    .description-certificate {
+        width: 100%;
+    }
+    
+    .text-certificate {
+        font-size: 16px;
+    }
+
+     /* ----------- Addservices ------------ */
+    .addservices-title {
+        font-size: 28px;
+    }
+    .addservices-wrapper {
+        grid: repeat(4, 26%) / repeat(2, 50%);
+        gap: 5px;
+        padding: 0 0 70px;
+    }
+
+    .text-addservices {
+        font-size: 14px;
+        padding: 10px 10px 0 5px;
+    }
+
+    /* ---------- Cobtacts ------------- */
+    .contacts-title {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    
+    .contacts-communication {
+        display: grid;
+        grid: repeat(4, 20%) / repeat(1, 100%);
+        row-gap: 20px;
+        column-gap: 0;
+        padding-bottom: 30px;
+    }
+    
+    .contacts-map {
+        display: none;
+    }
+
+    /* ----------- Footer ------------ */
+    .footer-menu {
+        padding: 8px 0 8px;
+    }
+
+    .footer-menu-list {
+        grid: repeat(3, auto) / repeat(2, auto);
+        column-gap: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -592,8 +1059,8 @@ h1 {
     .excursions-title {
         font-size: 12px;
     }
-    /* -------------наши маршруты--------------- */
 
+    /* -------------наши маршруты--------------- */
     .route-btn_details {
         width: 90%;
         margin-bottom: 20px;
@@ -603,14 +1070,58 @@ h1 {
         width: 90%;
     }
 
+    /* --------Modal_excursion---------------- */
+    .modal_excursion-window-inner {
+        padding: 47px 5px 30px 10px;
+    }
+    
+    .route-description {
+        padding-left: 15px;
+    }
 
-    /* -------------------------- */
+    /* --------- Test ----------------------- */
+    .test-button {
+        width: 90%;
+    }
+
+    /* --------- Photo ----------------------- */
+    .photo__inner {
+        padding: 50px 0px 10px;
+    }
+
+    /* --------- Specialoffers --------- */
+    .specialoffers-img {
+        display: none;
+    }
+
+    /* ----------- modal в меню, оставить заявку--------------- */
     .modal_application_window {
         width: 90vw;
     }
 
-    .modal_application_btn {
-        width: 100%;
+    /* ----------- Specialoffers ------------- */
+    .specialoffers-title {
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .specialoffers-wrapper {
+        padding-bottom: 20px;
+    }
+    /* -------------- Certificate --------------- */
+    .certificate-wrapper {
+        padding-bottom: 50px;
+    }
+
+    /* ------------ Questions --------------- */
+    .questions-title {
+        padding-top: 50px;
+    }
+    
+    /* -------------- Footer ----------------- */
+    .footer-logo {
+        display: none;
     }
 }
 
@@ -642,7 +1153,7 @@ h1 {
 
     /* ---------- наши маршруты ------------ */
     .routes_inner {
-        padding: 0 0 118px 0;;
+        padding: 0 0 70px 0;;
     }
 
     .title-routes--text {
@@ -652,7 +1163,7 @@ h1 {
     }
 
     .route-description {
-        padding-left: 25px;
+        padding-left: 15px;
     }
 
     .route-title {
@@ -661,6 +1172,27 @@ h1 {
 
     .route-btn_details {
         margin-top: 10px;
+    }
+
+    /* --------- Modal_excursion ---------- */
+    .modal_excursion-window-inner {
+        padding: 47px 5px 30px 5px;
+    }
+
+    .priceBike-list {
+        grid: none;
+    }
+
+    .form-booking {
+        grid: repeat(4, 80px)/repeat(1, 300px);
+    }
+
+    .input, .input-counter {
+        width: 300px;
+    }
+
+    .input-icon-arrow_down {
+        right: 10px;
     }
 
     /* ------------------------ */
@@ -674,6 +1206,27 @@ h1 {
 
     .input {
         width: 300px;
+    }
+
+    /* ----------- Specialoffers ------------- */
+    .specialoffers-title {
+        font-size: 28px;
+    }
+
+    .specialoffers-description {
+        padding-left: 8px;      
+    }
+
+    /* -------- Questions ----------- */
+    .questions-title {
+        font-size: 30px;
+    }
+
+    .appeal p {
+        width: 100%;
+        
+        font-size: 14px;
+        
     }
 }
 

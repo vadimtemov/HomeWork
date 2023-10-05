@@ -1,0 +1,115 @@
+.questions {
+    background: url("../images/background/bg-damper.png") 0px -210px no-repeat;
+}
+
+.questions__inner {
+    padding: 0 112px 85px;
+}
+
+.questions-title {
+    padding-top: 71px;
+    padding-bottom: 48px;
+}
+
+.questions-content {
+    display: flex;
+}
+
+.questions-accordion {
+    padding-right: 159px;
+}
+
+.accordion-list__item {
+    border-radius: 2px;
+    border: 0.5px solid #848484;
+    margin-bottom: 8px;
+}
+
+.accordion-list__item--opened {   
+    border: 0.5px solid #037E8C;    
+}
+
+.accordion-list__control {
+    width: 100%;
+    padding: 16px 14px 17px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.accordion-list__control-title {
+    color: #121214;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.accordion-list__control-icon {
+    transition: all .4s;
+}
+
+.accordion-list__item--opened .accordion-list__control-icon {
+    color: #037E8C;
+    transform: rotate(-90deg);
+    transition: all .4s;
+}
+
+.accordion-list__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.accordion-content {
+    padding: 24px 31px 16px 21px;
+}
+
+.accordion-conten__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.appeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appeal-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 0 14px;
+}
+
+.appeal p{
+    width: 378px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 31px;
+}
+
+.btn-appeal {
+    display: inline-block;
+    padding: 13px 33px;
+    height: 45px;
+    border-radius: 9px;
+    background: #037E8C;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.btn-appeal:hover {
+    color: #037E8C;
+    background: #fff;
+    border-radius: 9px;
+    border: 1.5px solid #037E8C;
+    transition: all .4s;
+}
+
+.addservices-title {
+    padding-bottom: 45px;
+}

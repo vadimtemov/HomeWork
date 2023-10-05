@@ -1,0 +1,45 @@
+.conditions {
+    background: #F4F4F4 url("../images/background/bg-mountains.png") 0px -330px no-repeat;
+    background-size: 100% 240%;
+}
+
+.conditions-title {
+    padding: 50px 0 43px;
+    width: 510px;
+    margin: auto;
+}
+
+.conditions-wrapper {
+    display: grid;
+    grid: repeat(2, 50%) / repeat(3, 32%);
+    gap: 30px;
+    padding-bottom: 110px;
+}
+
+.conditions-card {
+    position: relative;
+    border-radius: 9px;
+    background: #FFF;
+}
+
+.conditions-text {
+    display: block;
+    padding: 9px 20px 10px 65px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.conditions-text span{
+    font-weight: 600;
+}
+
+.conditions-text::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: url("../images/icons/check.svg");
+    top: 9px;
+    left: 5px;
+}

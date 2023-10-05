@@ -1,0 +1,33 @@
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0 2px;
+    border-bottom: 2px solid #121214;
+    border-top: 2px solid #121214;
+}
+
+.footer-logo {
+    padding-left: 112px;
+}
+
+.footer-menu-list {
+    display: grid;
+    grid: repeat(1, auto) / repeat(6, auto);
+    gap: 60px;
+}
+
+.footer-menu-item {
+    font-size: clamp(13px, 1vw, 14px);
+    font-weight: 600;
+    line-height: 104.7%;
+    text-transform: uppercase;
+}
+
+.trademark {
+    padding: 21px 0 24px;
+    text-align: center;
+    color: #787878;
+    font-weight: 400;
+    line-height: 126.687%;
+}
