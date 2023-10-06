@@ -30,6 +30,30 @@ document.addEventListener('keydown', event => {
   }
 })
 
+// MODAL__BOOK
+
+const btnBookOpen = document.querySelector('.nav_item-book')
+const btnBookOpenRo = document.querySelector('.route-btn_book')
+const btnBookOpenEx = document.querySelector('.route-btn_book-extendet')
+const btnBookClose = document.querySelector('.modal_book-close')
+
+
+btnBookOpen.addEventListener('click', () => {
+  body.classList.add('body__book-open')
+})
+
+btnBookOpenRo.addEventListener('click', () => {
+  body.classList.add('body__book-open')
+})
+
+btnBookOpenEx.addEventListener('click', () => {
+  body.classList.add('body__book-open')
+})
+
+btnBookClose.addEventListener('click', () => {
+  body.classList.remove('body__book-open')
+})
+
 // MODAL_EXCURSION
 
 const btnDetal = document.querySelector('.route-btn_details')
@@ -116,30 +140,7 @@ overlay.addEventListener('click', () => {
 
 
 // SLIDER
-
-// ============== slider-routes ===========
-
-// new Swiper(".swiper-container", {
-//   slidesPerView: 'auto',
-//   spaceBetween: 22,
-//   speed: 700,
-  
-
-//   observer: true,
-//   observeParents: true,
-//   observeSlideChildren: true,
-  
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-
-// =============== slider-routes 2=====================
+// =============== slider-routes =====================
 
 const swiper = new Swiper('.route__slider', {
 
@@ -183,7 +184,6 @@ const swiper = new Swiper('.route__slider', {
   // =============== Gallery_slider=====================
 
   const photo = new Swiper('.photo__swiper', {
-    // Optional parameters
     slidesPerView: 4,
     spaceBetween: 22,
     centeredSlides: true,
@@ -191,12 +191,10 @@ const swiper = new Swiper('.route__slider', {
     speed: 700,
     grabCursor: true,
   
-    // If we need pagination
     pagination: {
       el: '.photo-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.photo-button-prev',
       prevEl: '.photo-button-next',
@@ -226,10 +224,19 @@ const swiper = new Swiper('.route__slider', {
   accordionLists.forEach(el => {
     el.addEventListener('click', (e) => {
 
+      const accordionList = e.currentTarget
+      const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+      const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
+
       const accordionControl = e.target.closest('.accordion-list__control');
-      if(!accordionControl) return
+      if (!accordionControl) return
       const accordionItem = accordionControl.parentElement;
       const accordionContent = accordionControl.nextElementSibling;
+
+      if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+        accordionOpenedItem.classList.remove('accordion-list__item--opened');
+        accordionOpenedContent.style.maxHeight = null;
+      }
 
       accordionItem.classList.toggle('accordion-list__item--opened');
 
