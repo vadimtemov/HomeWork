@@ -105,7 +105,6 @@
 .btn-appeal:hover {
     color: #037E8C;
     background: #fff;
-    border-radius: 9px;
     border: 1.5px solid #037E8C;
     transition: all .4s;
 }

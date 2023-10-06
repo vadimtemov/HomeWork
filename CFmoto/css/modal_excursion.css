@@ -276,6 +276,7 @@ line-height: 160%;
     color: #037E8C;
     background: none;
     border: 1.5px solid #037E8C;
+    transition: all .4s;
 }
 
 

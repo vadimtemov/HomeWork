@@ -13,10 +13,15 @@
 @import url(addservices.css);
 @import url(contacts.css);
 @import url(footer.css);
+@import url(modal__book.css);
 
 
 
 /* ----------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
 .body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     color: #121214;
@@ -25,6 +30,10 @@
 }
 
 .body--open-menu {
+    overflow: hidden;
+}
+
+.body__book-open {
     overflow: hidden;
 }
 
@@ -609,7 +618,7 @@ h1 {
     }
 
     .online-booking-inner {
-        padding: 55px 0 98px 50px;
+        padding: 55px 0 98px 20px;
     }
 
     .input,
@@ -885,6 +894,7 @@ h1 {
         row-gap: 30px;
         column-gap: 15px;
     } 
+
     
 }
 
@@ -1223,10 +1233,12 @@ h1 {
     }
 
     .appeal p {
-        width: 100%;
-        
-        font-size: 14px;
-        
+        width: 100%;   
+        font-size: 14px;  
+    }
+     /* ------------ Modal__book ------------- */
+    .modal__book-window {
+        margin: 0;
     }
 }
 

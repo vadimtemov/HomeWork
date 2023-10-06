@@ -1,0 +1,36 @@
+.modal__book {
+    position: fixed;
+    inset: 0;
+    background:  #121214cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body__book-open .modal__book{
+    opacity: 1;
+    visibility: visible;
+    z-index: 12;
+    transition: all .4s;
+}
+
+.modal__book-window {
+    position: relative;
+    width: 960px;
+    margin: 0 20px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.modal_book-close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background: none;
+}
+
+.modal_book-close:hover {
+    color: #037E8C;;
+}

@@ -2,10 +2,6 @@
     background: url("../images/background/bg-mountains.png") 0px -510px no-repeat;
     background-size: 100% 190%;
 }
-.container {
-}
-.certificate__inner {
-}
 
 .certificate-title {
     padding-top: 50px;
@@ -36,12 +32,14 @@
     justify-content: space-around;
     align-items: flex-start;
 }
+
 .text-certificate {
     color: #151515;
     font-size: 18px;
     font-weight: 400;
     line-height: 172.5%;
 }
+
 .btn-certificate {
     display: inline-block;
     padding: 14px 22px;
@@ -56,6 +54,7 @@
 .btn-certificate:hover {
     color: #fff;
     background: #037E8C;
+    transition: all .4s;
 }
 
 .card-certificate {

@@ -88,4 +88,5 @@
 .specialoffers-btn:hover {
     color: #fff;
     background: #037E8C;
+    transition: all .4s;
 }
