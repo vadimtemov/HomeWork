@@ -16,18 +16,18 @@
     <div class="wrapper">
         <div class="overlay"></div>
         <header class="header">
-            <div class="header_top">
+            <div class="header_top" id="header">
                 <div class="container">
                     <div class="header_top-inner">
                         <img class="header_logo" src="images/logo/logo.png" alt="Логотип CFmoto">
                         <div class="nav">
                             <nav class="nav_inner">
                                 <ul class="nav_list">
-                                    <li class="nav_item"><a href="">Маршруты</a></li>
-                                    <li class="nav_item"><a href="">Галерея</a></li>
-                                    <li class="nav_item"><a href="">Вопрос-Ответ</a></li>
-                                    <li class="nav_item"><a href="">Контакт</a></li>
-                                    <li class="nav_item"><a href="">Забронировать</a></li>
+                                    <li class="nav_item"><a href="#routes">Маршруты</a></li>
+                                    <li class="nav_item"><a href="#photo">Галерея</a></li>
+                                    <li class="nav_item"><a href="#ask-questions">Вопрос-Ответ</a></li>
+                                    <li class="nav_item"><a href="#contacts">Контакт</a></li>
+                                    <li class="nav_item nav_item-book"><a href="#">Забронировать</a></li>
                                 </ul>
                             </nav>
                             <div class="connect">
@@ -95,7 +95,7 @@
                 </div>
             </section>
             <section class="title-routes">
-                <h2 class="title-routes--text">Наши маршруты</h2>
+                <h2 id="routes" class="title-routes--text">Наши маршруты</h2>
             </section>
             <section class="routes">
                 <div class="routes_inner">
@@ -171,7 +171,7 @@
                             </div>
                             <div class="route-btn">
                                 <button class="route-btn_details btn_open-extended  button">Подробнее</button>
-                                <button class="route-btn_book button">Забронировать</button>
+                                <button class="route-btn_book route-btn_book-extendet button">Забронировать</button>
                             </div>
                         </div>
                         <div class="route__slider swiper" dir="rtl">
@@ -249,7 +249,7 @@
                     <a class="test-button button" href="#">Начать тест</a>
                 </div>
             </section>
-            <section class="photo">
+            <section class="photo" id="photo">
                 <div class="photo__inner">
                     <h2 class="photo-title">Фото</h2>
                     <div class="photo__swiper swiper">
@@ -333,7 +333,7 @@
                     </div>
                 </div>
             </section>
-            <section class="conditions">
+            <section class="conditions" id="conditions">
                 <div class="container">
                     <div class="conditions__inner">
                         <h2 class="conditions-title">Условия предоставления
@@ -370,7 +370,7 @@
                     </div>
                 </div>
             </section>
-            <section class="specialoffers">
+            <section class="specialoffers" id="specialoffers">
                 <div class="container">
                     <div class="specialoffers__inner">
                         <h2 class="specialoffers-title">Спецпредложения</h2>
@@ -427,7 +427,7 @@
                     </div>
                 </div>
             </section>
-            <section class="questions">
+            <section class="questions" id="ask-questions">
                 <div class="container">
                     <div class="questions__inner">
                         <h2 class="questions-title">Вопросы-ответы</h2>
@@ -593,7 +593,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="contacts__inner">
                     <div class="contacts-box">
                         <h2 class="contacts-title">Контакты</h2>
@@ -648,20 +648,24 @@
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer-menu">
-                        <div class="footer-logo"><img src="images/logo/logo-min.png" alt="logo"></div>
+                        <div class="footer-logo"> <a href="#header"><img src="images/logo/logo-min.png" alt="logo"></a>
+                        </div>
                         <div class="footer-menu-box">
                             <ul class="footer-menu-list">
-                                <li class="footer-menu-item"><a href="#">Маршруты</a></li>
-                                <li class="footer-menu-item"><a href="#">Галерея</a></li>
-                                <li class="footer-menu-item"><a href="#">Вопрос-Ответ</a></li>
-                                <li class="footer-menu-item"><a href="#">Контакты</a></li>
-                                <li class="footer-menu-item"><a href="#">УСЛОВИЯ</a></li>
-                                <li class="footer-menu-item"><a href="#">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+                                <li class="footer-menu-item"><a href="#routes">Маршруты</a></li>
+                                <li class="footer-menu-item"><a href="#photo">Галерея</a></li>
+                                <li class="footer-menu-item"><a href="#ask-questions">Вопрос-Ответ</a></li>
+                                <li class="footer-menu-item"><a href="#contacts">Контакты</a></li>
+                                <li class="footer-menu-item"><a href="#conditions">УСЛОВИЯ</a></li>
+                                <li class="footer-menu-item"><a href="#specialoffers">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="trademark">© CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в
-                        Геленджике</div>
+                    <div class="trademark"><a
+                            href="https://www.figma.com/file/u5S9ciDrf2Tl2VUqyJzCFk/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%BE%D1%86%D0%B8%D0%BA%D0%BB%D1%8B-%D0%9B%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-(Copy)-(Copy)?node-id=0%3A1&mode=dev">©
+                            CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат
+                            квадроциклов в
+                            Геленджике</a></div>
                 </div>
             </div>
         </footer>
@@ -775,7 +779,8 @@
                                         d="M14.5 0.0625C6.52715 0.0625 0.0625 6.52715 0.0625 14.5C0.0625 22.4729 6.52715 28.9375 14.5 28.9375C22.4729 28.9375 28.9375 22.4729 28.9375 14.5C28.9375 6.52715 22.4729 0.0625 14.5 0.0625ZM15.5312 21.4609C15.5312 21.6027 15.4152 21.7188 15.2734 21.7188H13.7266C13.5848 21.7188 13.4688 21.6027 13.4688 21.4609V12.6953C13.4688 12.5535 13.5848 12.4375 13.7266 12.4375H15.2734C15.4152 12.4375 15.5312 12.5535 15.5312 12.6953V21.4609ZM14.5 10.375C14.0952 10.3667 13.7098 10.2001 13.4264 9.91094C13.1431 9.62174 12.9844 9.233 12.9844 8.82812C12.9844 8.42325 13.1431 8.03451 13.4264 7.74531C13.7098 7.45612 14.0952 7.28951 14.5 7.28125C14.9048 7.28951 15.2902 7.45612 15.5736 7.74531C15.8569 8.03451 16.0156 8.42325 16.0156 8.82812C16.0156 9.233 15.8569 9.62174 15.5736 9.91094C15.2902 10.2001 14.9048 10.3667 14.5 10.375Z" />
                                 </svg>
                             </a>
-                            <div class="priceBike-card-img"><img src="images/content/quadbike/uforce1000.jpg" alt="">
+                            <div class="priceBike-card-img"><img src="images/content/quadbike/uforce1000.jpg"
+                                    alt="квадроцикл">
                             </div>
                             <div class="priceBike-card-text">
                                 <div class="card-model">UFORCE 1000 EPS (U10 EPS)</div>
@@ -794,7 +799,8 @@
                                         d="M14.5 0.0625C6.52715 0.0625 0.0625 6.52715 0.0625 14.5C0.0625 22.4729 6.52715 28.9375 14.5 28.9375C22.4729 28.9375 28.9375 22.4729 28.9375 14.5C28.9375 6.52715 22.4729 0.0625 14.5 0.0625ZM15.5312 21.4609C15.5312 21.6027 15.4152 21.7188 15.2734 21.7188H13.7266C13.5848 21.7188 13.4688 21.6027 13.4688 21.4609V12.6953C13.4688 12.5535 13.5848 12.4375 13.7266 12.4375H15.2734C15.4152 12.4375 15.5312 12.5535 15.5312 12.6953V21.4609ZM14.5 10.375C14.0952 10.3667 13.7098 10.2001 13.4264 9.91094C13.1431 9.62174 12.9844 9.233 12.9844 8.82812C12.9844 8.42325 13.1431 8.03451 13.4264 7.74531C13.7098 7.45612 14.0952 7.28951 14.5 7.28125C14.9048 7.28951 15.2902 7.45612 15.5736 7.74531C15.8569 8.03451 16.0156 8.42325 16.0156 8.82812C16.0156 9.233 15.8569 9.62174 15.5736 9.91094C15.2902 10.2001 14.9048 10.3667 14.5 10.375Z" />
                                 </svg>
                             </a>
-                            <div class="priceBike-card-img"><img src="images/content/quadbike/cforce1000.jpg" alt="">
+                            <div class="priceBike-card-img"><img src="images/content/quadbike/cforce1000.jpg"
+                                    alt="квадроцикл">
                             </div>
                             <div class="priceBike-card-text">
                                 <div class="card-model">CFORCE 1000 EPS (X10 EPS)</div>
@@ -813,7 +819,8 @@
                                         d="M14.5 0.0625C6.52715 0.0625 0.0625 6.52715 0.0625 14.5C0.0625 22.4729 6.52715 28.9375 14.5 28.9375C22.4729 28.9375 28.9375 22.4729 28.9375 14.5C28.9375 6.52715 22.4729 0.0625 14.5 0.0625ZM15.5312 21.4609C15.5312 21.6027 15.4152 21.7188 15.2734 21.7188H13.7266C13.5848 21.7188 13.4688 21.6027 13.4688 21.4609V12.6953C13.4688 12.5535 13.5848 12.4375 13.7266 12.4375H15.2734C15.4152 12.4375 15.5312 12.5535 15.5312 12.6953V21.4609ZM14.5 10.375C14.0952 10.3667 13.7098 10.2001 13.4264 9.91094C13.1431 9.62174 12.9844 9.233 12.9844 8.82812C12.9844 8.42325 13.1431 8.03451 13.4264 7.74531C13.7098 7.45612 14.0952 7.28951 14.5 7.28125C14.9048 7.28951 15.2902 7.45612 15.5736 7.74531C15.8569 8.03451 16.0156 8.42325 16.0156 8.82812C16.0156 9.233 15.8569 9.62174 15.5736 9.91094C15.2902 10.2001 14.9048 10.3667 14.5 10.375Z" />
                                 </svg>
                             </a>
-                            <div class="priceBike-card-img"><img src="images/content/quadbike/cforce600.jpg" alt="">
+                            <div class="priceBike-card-img"><img src="images/content/quadbike/cforce600.jpg"
+                                    alt="квадроцикл">
                             </div>
                             <div class="priceBike-card-text">
                                 <div class="card-model">CFMOTO CFORCE 600 EPS</div>
@@ -832,7 +839,8 @@
                                         d="M14.5 0.0625C6.52715 0.0625 0.0625 6.52715 0.0625 14.5C0.0625 22.4729 6.52715 28.9375 14.5 28.9375C22.4729 28.9375 28.9375 22.4729 28.9375 14.5C28.9375 6.52715 22.4729 0.0625 14.5 0.0625ZM15.5312 21.4609C15.5312 21.6027 15.4152 21.7188 15.2734 21.7188H13.7266C13.5848 21.7188 13.4688 21.6027 13.4688 21.4609V12.6953C13.4688 12.5535 13.5848 12.4375 13.7266 12.4375H15.2734C15.4152 12.4375 15.5312 12.5535 15.5312 12.6953V21.4609ZM14.5 10.375C14.0952 10.3667 13.7098 10.2001 13.4264 9.91094C13.1431 9.62174 12.9844 9.233 12.9844 8.82812C12.9844 8.42325 13.1431 8.03451 13.4264 7.74531C13.7098 7.45612 14.0952 7.28951 14.5 7.28125C14.9048 7.28951 15.2902 7.45612 15.5736 7.74531C15.8569 8.03451 16.0156 8.42325 16.0156 8.82812C16.0156 9.233 15.8569 9.62174 15.5736 9.91094C15.2902 10.2001 14.9048 10.3667 14.5 10.375Z" />
                                 </svg>
                             </a>
-                            <div class="priceBike-card-img"><img src="images/content/quadbike/cforce400.jpg" alt="">
+                            <div class="priceBike-card-img"><img src="images/content/quadbike/cforce400.jpg"
+                                    alt="квадроцикл">
                             </div>
                             <div class="priceBike-card-text">
                                 <div class="card-model">CFORCE 400L EPS (X4 EPS)</div>
@@ -870,7 +878,8 @@
                                         d="M14.5 0.0625C6.52715 0.0625 0.0625 6.52715 0.0625 14.5C0.0625 22.4729 6.52715 28.9375 14.5 28.9375C22.4729 28.9375 28.9375 22.4729 28.9375 14.5C28.9375 6.52715 22.4729 0.0625 14.5 0.0625ZM15.5312 21.4609C15.5312 21.6027 15.4152 21.7188 15.2734 21.7188H13.7266C13.5848 21.7188 13.4688 21.6027 13.4688 21.4609V12.6953C13.4688 12.5535 13.5848 12.4375 13.7266 12.4375H15.2734C15.4152 12.4375 15.5312 12.5535 15.5312 12.6953V21.4609ZM14.5 10.375C14.0952 10.3667 13.7098 10.2001 13.4264 9.91094C13.1431 9.62174 12.9844 9.233 12.9844 8.82812C12.9844 8.42325 13.1431 8.03451 13.4264 7.74531C13.7098 7.45612 14.0952 7.28951 14.5 7.28125C14.9048 7.28951 15.2902 7.45612 15.5736 7.74531C15.8569 8.03451 16.0156 8.42325 16.0156 8.82812C16.0156 9.233 15.8569 9.62174 15.5736 9.91094C15.2902 10.2001 14.9048 10.3667 14.5 10.375Z" />
                                 </svg>
                             </a>
-                            <div class="priceBike-card-img"><img src="images/content/quadbike/uforce1000.jpg" alt="">
+                            <div class="priceBike-card-img"><img src="images/content/quadbike/uforce1000.jpg"
+                                    alt="квадроцикл">
                             </div>
                             <div class="priceBike-card-text">
                                 <div class="card-model">UFORCE 1000 EPS (U10 EPS)</div>
@@ -940,6 +949,58 @@
             <div class="modal__info-text">
                 <div class="power">Мощность:<span> 72 л.с.</span></div>
                 <div class="engine">Двигатель:<span> 1000 см3</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__book">
+        <div class="modal__book-window">
+            <button class="modal_book-close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.30007 6.41466C8.0486 6.17178 7.71179 6.03739 7.3622 6.04043C7.0126 6.04346 6.67818 6.18369 6.43097 6.4309C6.18376 6.67811 6.04354 7.01253 6.0405 7.36212C6.03746 7.71172 6.17185 8.04852 6.41473 8.29999L14.1147 16L6.4134 23.7C6.28605 23.823 6.18447 23.9701 6.1146 24.1328C6.04472 24.2955 6.00794 24.4704 6.0064 24.6475C6.00486 24.8245 6.03859 25.0001 6.10564 25.1639C6.17268 25.3278 6.27168 25.4767 6.39687 25.6019C6.52206 25.727 6.67093 25.826 6.83479 25.8931C6.99865 25.9601 7.17423 25.9939 7.35127 25.9923C7.52831 25.9908 7.70327 25.954 7.86594 25.8841C8.02861 25.8142 8.17574 25.7127 8.29873 25.5853L16.0001 17.8853L23.7001 25.5853C23.9515 25.8282 24.2883 25.9626 24.6379 25.9596C24.9875 25.9565 25.3219 25.8163 25.5692 25.5691C25.8164 25.3219 25.9566 24.9875 25.9596 24.6379C25.9627 24.2883 25.8283 23.9515 25.5854 23.7L17.8854 16L25.5854 8.29999C25.8283 8.04852 25.9627 7.71172 25.9596 7.36212C25.9566 7.01253 25.8164 6.67811 25.5692 6.4309C25.3219 6.18369 24.9875 6.04346 24.6379 6.04043C24.2883 6.03739 23.9515 6.17178 23.7001 6.41466L16.0001 14.1147L8.30007 6.41332V6.41466Z" />
+                </svg>
+            </button>
+            <div class="online-booking">
+                <div class="online-booking-inner">
+                    <div class="online-booking-title">Бронирование онлайн</div>
+                    <form class="modal_application_form form-booking">
+                        <div class="form-box">
+                            <p class="application_text">Желаемая дата</p>
+                            <div class="application_input">
+                                <img class="input-icon" src="images/icons/calendar.svg">
+                                <img class="input-icon-arrow_down" src="images/icons/arrow_down.svg">
+                                <input class="input" type="date">
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <p class="application_text">Количество человек</p>
+                            <input class="input-counter" type="text" readonly>
+                            <div class="application_input-counter">
+                                <button class="number-minus" type="button"
+                                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                                <input class="input" type="number" min="0" max="12" readonly>
+                                <button class="number-plus" type="button"
+                                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <p class="application_text">Телефон или WhatsApp</p>
+                            <div class="application_input">
+                                <img class="input-icon" src="images/icons/phone.svg">
+                                <input class="input" type="tel">
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <p class="application_text">Как к Вам обращаться?</p>
+                            <div class="application_input">
+                                <img class="input-icon" src="images/icons/avatar.svg">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <button class="modal_application_btn modal_book-btn  button">Забронировать</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
