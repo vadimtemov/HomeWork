@@ -1010,7 +1010,11 @@ h1 {
         padding: 10px 10px 0 5px;
     }
 
-    /* ---------- Cobtacts ------------- */
+    /* ---------- Contacts ------------- */
+    .contacts__inner {
+        margin-bottom: 30px;
+    }
+    
     .contacts-title {
         padding-bottom: 50px;
         padding-top: 20px;
@@ -1022,10 +1026,6 @@ h1 {
         row-gap: 20px;
         column-gap: 0;
         padding-bottom: 30px;
-    }
-    
-    .contacts-map {
-        display: none;
     }
 
     /* ----------- Footer ------------ */
@@ -1131,7 +1131,13 @@ h1 {
     
     /* -------------- Footer ----------------- */
     .footer-logo {
-        display: none;
+        max-width: 60px;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    
+    .footer-menu-item {
+        font-size: 12px;
     }
 }
 
@@ -1239,6 +1245,11 @@ h1 {
      /* ------------ Modal__book ------------- */
     .modal__book-window {
         margin: 0;
+    }
+
+     /* -------------- Footer ----------------- */
+    .footer-menu-item {
+        font-size: 10px;
     }
 }
 
